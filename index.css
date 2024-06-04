@@ -1,0 +1,150 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#student {
+    color: black;
+    font-size: 20px;
+}
+
+#admin {
+    color: black;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: antiquewhite;
+}
+
+
+.homePage{
+    display: inline-block;
+}
+
+#questionList{
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.questionItem{
+    margin-bottom: 10px;
+}
+
+.questionItem label {
+    display: block;
+    padding-left: 20px;
+}
+
+#adminHome span {
+    display: block;
+    text-align: center;
+  }
+
+  .quizBox {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+.quizOption {
+    margin: 10px 0;
+    padding-left: 10px;
+}
+#playButton {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+#playButton:hover {
+    background-color: #0056b3;
+}
+.noQuizzesMessage {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.quizContainer {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+}
+.questionBox {
+    margin: 20px 0;
+}
+.questionTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.options {
+    margin-left: 20px;
+}
+.options label {
+    display: block;
+    margin-bottom: 5px;
+}
+#submitButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+#submitButton:hover {
+    background-color: #0056b3;
+}
+#logoutButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#logoutButton:hover {
+    background-color: #ff1a1a;
+}
+--------------------------------------------------------------------------------------------
