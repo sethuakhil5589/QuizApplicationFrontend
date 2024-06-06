@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Student Home</h1>
+    <button id="logoutButton">Logout</button>
+    <div id="quizSummary">
+        <h2>Quiz Summary</h2>
+        <p><strong>Number of Quizzes Played:</strong> <span id="noOfQuizzesPlayed"></span></p>
+        <p><strong>Total Marks:</strong> <span id="totalMarks"></span></p>
+        <p><strong>Scored Marks:</strong> <span id="scoredMarks"></span></p>
+    </div>
+    <div id="openQuizzes" class="quizBox">
+        <h2>Open Quizzes</h2>
+        <form id="openQuizzesForm">
+            <!-- Open quizzes will be dynamically added here -->
+        </form>
+        <p id="noQuizzesMessage" class="noQuizzesMessage" style="display:none;">No open quizzes to play.</p>
+        <button id="playButton">Play</button>
+    </div>
+    <script src="studentHome.js"></script>
+</body>
+
+</html>
