@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // Fetch quiz summary
-    fetch(`http://3.142.199.144:8084/result/quizSummary/${studentId}`)
+    fetch(`http://18.217.230.136:8084/result/quizSummary/${studentId}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch quiz summary');
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     // Fetch active quizzes
-    fetch(`http://18.116.63.41:8083/quiz/activeQuizzes`)
+    fetch(`http://18.222.200.25:8083/quiz/activeQuizzes`)
         .then(response => response.json())
         .then(data => {
             const openQuizzesForm = document.getElementById('openQuizzesForm');

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             adminPassword: adminPassword
         };
 
-        fetch('http://18.118.208.245:8080/admin/login', {
+        fetch('http://18.191.142.207:8080/admin/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
