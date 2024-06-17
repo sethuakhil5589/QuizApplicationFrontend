@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Fetch question details
-    fetch(`http://3.142.222.173:8082/questions/getQuestion/${questionId}`)
+    fetch(`http://localhost:8082/questions/getQuestion/${questionId}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch question details');
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             topic: document.getElementById("topic").value,
         };
 
-        fetch('http://18.222.200.25:8083/quiz/updateQuestion', {
+        fetch('http://localhost:8083/quiz/updateQuestion', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

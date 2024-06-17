@@ -11,7 +11,7 @@ document.getElementById("questionForm").addEventListener("submit", function(even
         topic: document.getElementById("topic").value,
     };
 
-    fetch('http://18.222.200.25:8083/quiz/addQuestion', {
+    fetch('http://localhost:8083/quiz/addQuestion', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

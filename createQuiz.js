@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     // Fetch all questions
-    fetch('http://18.222.200.25:8083/quiz/allQuestions')
+    fetch('http://localhost:8083/quiz/allQuestions')
         .then(response => response.json())
         .then(data => {
             const questionList = document.getElementById('questionList');
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             adminId: parseInt(adminId),
             title: quizTitle
         };
-        fetch('http://18.222.200.25:8083/quiz/create', {
+        fetch('http://localhost:8083/quiz/create', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

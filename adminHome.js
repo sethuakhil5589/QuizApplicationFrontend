@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Fetch quiz titles
-    fetch(`http://18.222.200.25:8083/quiz/titles/${adminId}`)
+    fetch(`http://localhost:8083/quiz/titles/${adminId}`)
         .then(response => response.json())
         .then(data => {
             const quizzesContainer = document.getElementById('quizzesContainer');
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll('.deleteButton').forEach(button => {
                 button.addEventListener('click', function () {
                     const quizId = this.getAttribute('data-quiz-id');
-                    fetch(`http://18.222.200.25:8083/quiz/deleteQuiz/${quizId}`, { method: 'DELETE' })
+                    fetch(`http://localhost:8083/quiz/deleteQuiz/${quizId}`, { method: 'DELETE' })
                         .then(response => {
                             if (response.ok) {
                                 alert('Quiz deleted successfully.');
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 button.addEventListener('click', function () {
                     const quizId = this.getAttribute('data-quiz-id');
                     const newStatus = this.textContent === 'Start Quiz';
-                    fetch(`http://18.222.200.25:8083/quiz/status/${quizId}/${newStatus}`, { method: 'GET' })
+                    fetch(`http://localhost:8083/quiz/status/${quizId}/${newStatus}`, { method: 'GET' })
                         .then(response => response.text())
                         .then(result => {
                             if (result.includes('Status changed to:')) {

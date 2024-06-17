@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
         // Make an HTTP POST request to the API endpoint for signup
-        fetch('http://18.191.142.207:8080/student/signup', {
+        fetch('http://localhost:8080/student/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

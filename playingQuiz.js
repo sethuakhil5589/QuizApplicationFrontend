@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Fetch question IDs for the quiz
-    fetch(`http://18.222.200.25:8083/quiz/getQuiz/${quizId}`)
+    fetch(`http://localhost:8083/quiz/getQuiz/${quizId}`)
         .then(response => response.json())
         .then(questionIds => {
             // Fetch questions based on the question IDs
-            return fetch(`http://18.222.200.25:8083/quiz/questionsByIds`, {
+            return fetch(`http://localhost:8083/quiz/questionsByIds`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             answers: answers
         };
 
-        fetch(`http://18.217.230.136:8084/result/submit`, {
+        fetch(`http://localhost:8084/result/submit`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

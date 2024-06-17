@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Fetch existing quiz details
-    fetch(`http://18.222.200.25:8083/quiz/quizDetails/${quizId}`)
+    fetch(`http://localhost:8083/quiz/quizDetails/${quizId}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch quiz details');
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('quizTitle').value = data.title;
 
             // Fetch all questions
-            fetch('http://3.142.222.173:8082/questions/allQuestions')
+            fetch('http://localhost:8082/questions/allQuestions')
                 .then(response => response.json())
                 .then(questions => {
                     const questionList = document.getElementById('questionList');
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: quizTitle
         };
 
-        fetch('http://18.222.200.25:8083/quiz/updateQuiz', {
+        fetch('http://localhost:8083/quiz/updateQuiz', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

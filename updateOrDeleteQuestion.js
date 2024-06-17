@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Fetch all questions
-    fetch('http://3.22.77.81:8082/questions/allQuestions')
+    fetch('http://localhost:8082/questions/allQuestions')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch questions');
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        fetch(`http://3.142.199.144:8083/quiz/deleteQuestion/${selectedQuestionId.value}`, { method: 'DELETE' })
+        fetch(`http://localhost:8083/quiz/deleteQuestion/${selectedQuestionId.value}`, { method: 'DELETE' })
             .then(response => {
                 if (response.ok) {
                     alert('Question deleted successfully.');
